@@ -5,19 +5,6 @@ contracts/ # Solidity 合约（ERC20 + Vesting + Factory）
 deploy/ # Hardhat-deploy 脚本
 frontend/ # 前端代码（React + Tailwind + shadcn/ui）
 hardhat.config.js # Hardhat 配置
-## 快速启动
-1. 安装依赖：npm install
-2. 配置 Chainlink / Sepolia 环境变量 加密私钥 以及 alchemy url等
-   1. npx env-enc set-pw
-   2. npx env-enc set 配置（SEPOLIA_URL， PRIVATE_KEY1， PRIVATE_KEY2等）
-3. 编译合约 `npx hardhat compile`
-4. 部署合约到 Sepolia 测试网 `npx hardhat deploy --network sepolia` 
-   1. 将deployment下的 ABI信息拷贝到前端： `cp deployments/sepolia/*.json frontend/src/contracts/`
-5. 前端启动
-   1. cd frontend
-   2. npm install
-   3. npm run dev
-
 
 ## 🚀 快速启动
 ### ✅ 1. 安装依赖（根目录）
