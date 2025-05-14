@@ -1,5 +1,23 @@
 # 🪙 Token Vesting DApp
-这是一个基于 Solidity、Hardhat、React构建的线性释放（Vesting）合约项目，支持创建 Vesting 合约、注资（Fund）、领取代币（Claim）等完整流程。
+这是一个基于 Solidity、Hardhat、React 构建的线性释放（Vesting）合约项目，支持：
+
+- ✅ 创建 Vesting 合约（Create）
+- 💰 注资（Fund）
+- 🎁 领取代币（Claim）
+
+该项目完整实现了一个典型的 Web3 Vesting 流程，可用于团队激励、顾问代币发放等场景。
+
+📘 查看设计文档：`/doc/vesting-design.md`
+
+---
+
+## 🔧 关于代币注资（Mint）
+
+如果你希望将 ERC20 Token 预先转入某个 Vesting 合约地址，用于测试或初始化资金，可使用项目提供的脚本：
+
+```bash
+npx hardhat run scripts/mint-token.js --network sepolia
+```
 ## 📦 项目结构
 contracts/ # Solidity 合约（ERC20 + Vesting + Factory）
 deploy/ # Hardhat-deploy 脚本
@@ -46,3 +64,5 @@ npm install
 npm run dev
 ```
 默认运行在 http://localhost:5173。
+
+## 
